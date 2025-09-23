@@ -5,6 +5,13 @@
   font-family: Arial, sans-serif;
 }
 
+/* Restore sensible default spacing for lists after universal reset */
+ul, ol {
+  padding-left: 1.4rem; /* space for outside bullets */
+  margin: 0 0 1rem;     /* bottom rhythm */
+  list-style-position: outside;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -156,9 +163,12 @@ footer {
   font-size: 1rem;
 }
 .participants-list {
-  margin-left: 18px;
+  /* Use padding so bullets align properly instead of shifting entire block */
+  padding-left: 1.15rem;
+  margin: 0 0 0.5rem;
   color: #2e7d32;
   font-size: 0.98rem;
+  list-style-type: disc;
 }
 .participants-list li {
   margin-bottom: 3px;
